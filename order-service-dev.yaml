@@ -1,5 +1,0 @@
-server:
-  port: 8887
-
-custom:
-  name: test-env
