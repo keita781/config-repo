@@ -1,1 +1,17 @@
+server:
+  port: 8083
 
+custom:
+  env-name: "UAT_用戶驗收環境"
+  version: "1.0.0-RELEASE-CANDIDATE"
+
+spring:
+  datasource:
+    url: jdbc:mysql://uat-db.company.com:3306/user_uat
+    username: uat_root
+    # 這裡放另一組加密碼
+    password: "{cipher}BQBcdD...[這裡放您的UAT加密碼]..."
+
+# UAT 環境通常會對接外部正式測試環境的 Token
+security:
+  jwt-secret: "{cipher}CQCeeF...[加密的JWT金鑰]..."
