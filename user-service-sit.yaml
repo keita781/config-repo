@@ -12,7 +12,7 @@ spring:
     username: sit_admin
     # 重點測試：請放入您用 Config Server 加密後的字串
     # 如果還沒產生，可以先寫一個假的，測試 Config Server 是否會噴加密錯誤（代表它有在試圖解密）
-    password: "{cipher}AQAAbC...[這裡放您的SIT加密碼]..."
+    password: "123456"
 
 # 模擬一個 SIT 特有的第三方 API Key
 third-party:
