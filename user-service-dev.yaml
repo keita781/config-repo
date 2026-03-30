@@ -1,1 +1,14 @@
+server:
+  port: 8081
 
+custom:
+  env-name: "DEVELOPMENT_環境"
+  debug-mode: true
+  api-timeout: 5000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_dev
+    username: dev_user
+    # 測試時先用明碼，確認連線正常
+    password: dev_password_123
